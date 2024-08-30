@@ -5,14 +5,10 @@ import br.com.solutis.exercicios.interfaces.AnimalIF;
 public abstract class AnimalAB implements AnimalIF {
     protected String nome;
     protected String tipoAnimal;
-
     protected int idade;
-
     protected String habitat;
     protected int quantidadePatas;
-
     protected double altura;
-
     protected double peso;
     protected int comidaIngerida = 0;
     protected int distanciaTotal = 0;
@@ -36,7 +32,7 @@ public abstract class AnimalAB implements AnimalIF {
     @Override
     public abstract void dormir(int horas);
 
-    // Para fins de teste
+    // Para fins de teste.
      public int getComidaIngerida() {
         return comidaIngerida;
     }
