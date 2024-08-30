@@ -9,53 +9,60 @@ import br.com.solutis.exercicios.animais.terrestres.Leao;
 
 public class TesteAnimais {
     public static void main(String[] args) {
-        // Criando instâncias dos animais
-        Cachorro cachorro = new Cachorro("Rex", 5, "Casa", 0.6, 20.0);
-        Gato gato = new Gato("Miau", 3, "Casa", 0.4, 5.0);
+        // Criação dos animais
+        Cachorro cachorro = new Cachorro("Rex", 5, "Quintal", 0.6, 20.0);
         Elefante elefante = new Elefante("Dumbo", 10, "Selva", 3.0, 5000.0);
-        Leao leao = new Leao("Simba", 7, "Savana", 1.2, 200.0);
-        Peixe peixe = new Peixe("Nemo", 2, "Oceano", 0.3, 0.5);
-        Pombo pombo = new Pombo("Pippo", 4, "Cidade", 0.3, 0.4);
+        Gato gato = new Gato("Mimi", 3, "Casa", 0.3, 4.0);
+        Leao leao = new Leao("Simba", 7, "Savanna", 1.2, 190.0);
+        Peixe peixe = new Peixe("Nemo", 2, "Recife", 0.3, 1.0);
+        Pombo pombo = new Pombo("Pippo", 1, "Cidade", 0.5, 0.3, 0.5);
 
-        // Usando os métodos de cada classe
-        cachorro.comer(5);
-        cachorro.mover(100);
+        // Testes com Cachorro
+        cachorro.comer(10);
+        cachorro.moverse(5);
         cachorro.dormir(8);
+        System.out.println("Cachorro - Comida ingerida: " + cachorro.getComidaIngerida() +
+                ", Distância total: " + cachorro.getDistanciaTotal() +
+                ", Horas dormidas: " + cachorro.getHorasDormidas());
 
-        gato.comer(3);
-        gato.mover(50);
+        // Testes com Elefante
+        elefante.comer(50);
+        elefante.moverse(10);
+        elefante.dormir(12);
+        System.out.println("Elefante - Comida ingerida: " + elefante.getComidaIngerida() +
+                ", Distância total: " + elefante.getDistanciaTotal() +
+                ", Horas dormidas: " + elefante.getHorasDormidas());
+
+        // Testes com Gato
+        gato.comer(5);
+        gato.moverse(2);
         gato.dormir(6);
+        System.out.println("Gato - Comida ingerida: " + gato.getComidaIngerida() +
+                ", Distância total: " + gato.getDistanciaTotal() +
+                ", Horas dormidas: " + gato.getHorasDormidas());
 
-        elefante.comer(200);
-        elefante.mover(200);
-        elefante.dormir(10);
+        // Testes com Leão
+        leao.comer(30);
+        leao.moverse(7);
+        leao.dormir(10);
+        System.out.println("Leão - Comida ingerida: " + leao.getComidaIngerida() +
+                ", Distância total: " + leao.getDistanciaTotal() +
+                ", Horas dormidas: " + leao.getHorasDormidas());
 
-        leao.comer(150);
-        leao.mover(150);
-        leao.dormir(12);
+        // Testes com Peixe
+        peixe.comer(3);
+        peixe.moverse(4);  // Testa nadar
+        peixe.dormir(5);
+        System.out.println("Peixe - Comida ingerida: " + peixe.getComidaIngerida() +
+                ", Distância nadada: " + peixe.getDistanciaTotal() +
+                ", Horas dormidas: " + peixe.getHorasDormidas());
 
-        peixe.comer(2);
-        peixe.mover(50); // Isso chamará o método nadar
-        peixe.dormir(6);
-
-        pombo.comer(4);
-        pombo.mover(200); // Isso chamará o método voar
-        pombo.dormir(7);
-
-        // Acessando e exibindo atributos dos animais usando getters
-        System.out.println("Cachorro: " + cachorro.getNome() + ", Idade: " + cachorro.getIdade() + ", Habitat: " + cachorro.getHabitat());
-        System.out.println("Gato: " + gato.getNome() + ", Idade: " + gato.getIdade() + ", Habitat: " + gato.getHabitat());
-        System.out.println("Elefante: " + elefante.getNome() + ", Idade: " + elefante.getIdade() + ", Habitat: " + elefante.getHabitat());
-        System.out.println("Leão: " + leao.getNome() + ", Idade: " + leao.getIdade() + ", Habitat: " + leao.getHabitat());
-        System.out.println("Peixe: " + peixe.getNome() + ", Idade: " + peixe.getIdade() + ", Habitat: " + peixe.getHabitat());
-        System.out.println("Pombo: " + pombo.getNome() + ", Idade: " + pombo.getIdade() + ", Habitat: " + pombo.getHabitat());
-
-        // Exibindo informações adicionais
-        System.out.println("Cachorro - Comida ingerida: 5, Distância percorrida: 100, Horas dormidas: 8");
-        System.out.println("Gato - Comida ingerida: 3, Distância percorrida: 50, Horas dormidas: 6");
-        System.out.println("Elefante - Comida ingerida: 200, Distância percorrida: 200, Horas dormidas: 10");
-        System.out.println("Leão - Comida ingerida: 150, Distância percorrida: 150, Horas dormidas: 12");
-        System.out.println("Peixe - Comida ingerida: 2, Distância nadada: 50, Horas dormidas: 6");
-        System.out.println("Pombo - Comida ingerida: 4, Distância voada: 200, Horas dormidas: 7");
+        // Testes com Pombo
+        pombo.comer(2);
+        pombo.moverse(10); // Testa voar
+        pombo.dormir(4);
+        System.out.println("Pombo - Comida ingerida: " + pombo.getComidaIngerida() +
+                ", Distância voada: " + pombo.getDistanciaTotal() +
+                ", Horas dormidas: " + pombo.getHorasDormidas());
     }
 }

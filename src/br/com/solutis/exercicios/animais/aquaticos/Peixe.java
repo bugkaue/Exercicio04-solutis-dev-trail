@@ -1,21 +1,18 @@
 package br.com.solutis.exercicios.animais.aquaticos;
 
+import br.com.solutis.exercicios.abstratas.AnimalMarinhoAB;
+
 public class Peixe extends AnimalMarinhoAB {
-    private int quantidadeComida;
-    private int distanciaPercorrida;
-    private int horasDormidas;
-
     public Peixe(String nome, int idade, String habitat, double altura, double peso) {
-        super(nome, "Peixe", idade, habitat, 0, 0, 0, altura, peso);
+        super(nome, "Peixe", idade, habitat, altura, peso);
     }
-
     @Override
     public void comer(int quantidade) {
-        quantidadeComida += quantidade;
+        comidaIngerida += quantidade;
     }
 
     @Override
-    public void mover(int distancia) {
+    public void moverse(double distancia) {
         nadar(distancia);
     }
 
@@ -25,7 +22,7 @@ public class Peixe extends AnimalMarinhoAB {
     }
 
     @Override
-    public void nadar(int distancia) {
-        distanciaPercorrida += distancia;
+    public void nadar(double distancia) {
+        distanciaTotal += distancia;
     }
 }
