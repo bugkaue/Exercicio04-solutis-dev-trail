@@ -12,7 +12,7 @@ public class Peixe extends AnimalMarinhoAB {
     }
 
     @Override
-    public void moverse(double distancia) {
+    public void mover(double distancia) {
         nadar(distancia);
     }
 

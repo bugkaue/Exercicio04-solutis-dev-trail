@@ -19,7 +19,7 @@ public class TesteAnimais {
 
         // Testes com Cachorro
         cachorro.comer(10);
-        cachorro.moverse(5);
+        cachorro.mover(5);
         cachorro.dormir(8);
         System.out.println("Cachorro - Comida ingerida: " + cachorro.getComidaIngerida() +
                 ", Distância total: " + cachorro.getDistanciaTotal() +
@@ -27,7 +27,7 @@ public class TesteAnimais {
 
         // Testes com Elefante
         elefante.comer(50);
-        elefante.moverse(10);
+        elefante.mover(10);
         elefante.dormir(12);
         System.out.println("Elefante - Comida ingerida: " + elefante.getComidaIngerida() +
                 ", Distância total: " + elefante.getDistanciaTotal() +
@@ -35,7 +35,7 @@ public class TesteAnimais {
 
         // Testes com Gato
         gato.comer(5);
-        gato.moverse(2);
+        gato.mover(2);
         gato.dormir(6);
         System.out.println("Gato - Comida ingerida: " + gato.getComidaIngerida() +
                 ", Distância total: " + gato.getDistanciaTotal() +
@@ -43,7 +43,7 @@ public class TesteAnimais {
 
         // Testes com Leão
         leao.comer(30);
-        leao.moverse(7);
+        leao.mover(7);
         leao.dormir(10);
         System.out.println("Leão - Comida ingerida: " + leao.getComidaIngerida() +
                 ", Distância total: " + leao.getDistanciaTotal() +
@@ -51,7 +51,7 @@ public class TesteAnimais {
 
         // Testes com Peixe
         peixe.comer(3);
-        peixe.moverse(4);  // Testa nadar
+        peixe.mover(4);  // Testa nadar
         peixe.dormir(5);
         System.out.println("Peixe - Comida ingerida: " + peixe.getComidaIngerida() +
                 ", Distância nadada: " + peixe.getDistanciaTotal() +
@@ -59,7 +59,7 @@ public class TesteAnimais {
 
         // Testes com Pombo
         pombo.comer(2);
-        pombo.moverse(10); // Testa voar
+        pombo.mover(10); // Testa voar
         pombo.dormir(4);
         System.out.println("Pombo - Comida ingerida: " + pombo.getComidaIngerida() +
                 ", Distância voada: " + pombo.getDistanciaTotal() +

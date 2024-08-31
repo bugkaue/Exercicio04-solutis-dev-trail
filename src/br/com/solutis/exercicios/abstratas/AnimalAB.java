@@ -27,7 +27,7 @@ public abstract class AnimalAB implements AnimalIF {
     public abstract void comer(int quantidade);
 
     @Override
-    public abstract void moverse(double distancia);
+    public abstract void mover(double distancia);
 
     @Override
     public abstract void dormir(int horas);

@@ -12,7 +12,7 @@ public class Cachorro extends AnimalTerrestreAB {
     }
 
     @Override
-    public void moverse(double distancia) {
+    public void mover(double distancia) {
         distanciaTotal += distancia;
     }
 

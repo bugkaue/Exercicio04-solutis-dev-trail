@@ -11,7 +11,7 @@ public class Pombo extends AnimalVoadorAB {
         comidaIngerida += quantidade;
     }
     @Override
-    public void moverse(double distancia) {
+    public void mover(double distancia) {
         voar(distancia);
     }
 
